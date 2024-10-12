@@ -1,10 +1,17 @@
 meme_dict = {
-            "CRINGE": "Algo excepcionalmente raro o embarazoso",
-            "LOL": "Una respuesta común a algo gracioso", "ROFL": " una respuesta a una broma", "SHEESH" :" ligera desaprobación", "CREEPY": "aterrador, siniestro", 
-    "AGGRO":"ponerse agresivo/enojado"
-            }
+    "CRINGE": "Algo excepcionalmente raro o embarazoso",
+    "LOL": "Una respuesta común a algo gracioso",
+    "ROFL": "Una respuesta a una broma",
+    "SHEESH": "Ligera desaprobación",
+    "CREEPY": "Aterrador, siniestro",
+    "AGGRO": "Ponerse agresivo/enojado"
+}
+
+# Solicitar al usuario que ingrese una palabra
 word = input("Escribe una palabra que no entiendas (¡con mayúsculas!): ")
-if word in meme_dict.keys():
-    # ¿Qué debemos hacer si se encuentra la palabra?
+
+# Verificar si la palabra está en el diccionario
+if word in meme_dict:
+    print("{}: {}".format(word, meme_dict[word]))
 else:
-    # ¿Qué hacer si no se encuentra la palabra?
+    print("Lo siento, no tengo información sobre esa palabra.")
